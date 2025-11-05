@@ -1,2 +1,5 @@
 # cps.github.io
-First work in KATA
+
+GitHub Pages link:
+
+https://evgenykankin.github.io/cps.github.io/
