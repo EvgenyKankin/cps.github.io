@@ -1,0 +1,167 @@
+@media (min-width: 320px) and (max-width: 767px) {
+  
+.header-menu {
+  background-color: white;
+}
+  
+.header-menu__item--screen--768 {
+  display:none;
+}
+
+.header-menu__nav--screen--1120 {
+  display:none;
+}
+
+.side-menu__slider {
+  display:flex;
+  position: relative;  
+  overflow: auto;
+  white-space: nowrap;
+  padding-left:30px;
+}
+
+.side-menu__item--screen--desktop {
+  display:none;
+}
+
+.side-menu__slider button:nth-child(2) {
+  border:2px solid #B8FFEC;
+  border-radius:5px;
+  }
+
+.side-menu__slider button:nth-child(2)::after {
+  content:"";
+  position: absolute; 
+  top: 0;
+  right: 0;
+  width: 24px; 
+  height: 40px; 
+  background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+  pointer-events: none;
+}
+
+.about__text--screen--320 {
+  display:flex;
+  }
+
+.about__text--screen--768 {
+  display:none;
+  }
+
+.about__text--screen--1120 {
+  display:none;
+  }
+
+.main-container {
+  flex-direction: column;
+}
+
+.pic {
+    width:320px;
+    height:176px;
+}
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1119px) {
+  
+
+.header-menu {
+  background-color: white;
+}
+
+.header-menu__nav--screen--1120 {
+  display:none;
+}
+
+.side-menu__slider {
+  display:flex;
+  position: relative;  
+  overflow: auto;
+  white-space: nowrap;
+  padding-left:30px;
+  }
+
+.side-menu__item--screen--desktop {
+  display:none;
+}
+
+.side-menu__slider button:nth-child(2) {
+  border:2px solid #B8FFEC;
+  border-radius:5px;
+}
+
+
+.side-menu__slider button:nth-child(2)::after {
+  content:"";
+  position: absolute; 
+  top: 0;
+  right: 0;
+  width: 24px; 
+  height: 40px; 
+  background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+  pointer-events:none;
+}
+.about__text--screen--320 {
+  display:flex;
+}
+
+.about__text--screen--768 {
+  display:flex;
+}
+
+.about__text--screen--1120 {
+  display:none;
+}
+
+.pic {
+    width:360px;
+    height:208px;
+}
+}
+
+
+@media (min-width: 1120px) {
+  .header-menu {
+    display:none;
+  }
+
+  .header-menu__nav--screen--1120 {
+    display:flex;
+    justify-content:space-between;
+  }
+
+  .section__title--pocket {
+    display:none;
+  }
+
+  .side-menu__slider {
+  display:flex;
+  flex-wrap:wrap;
+  white-space: nowrap;
+  padding-left:30px;
+  }
+
+  .side-menu__item--screen--desktop {
+  border:2px solid #B8FFEC;
+  border-radius:5px;
+  }
+
+.about__text--screen--320 {
+  display:flex;
+  }
+
+.about__text--screen--768 {
+  display:none;
+  }
+
+.about__text--screen--1120 {
+  display:flex;
+  }
+
+.pic {
+    width:531.35px;
+    height:307px;
+}
+}
