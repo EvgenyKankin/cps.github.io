@@ -63,6 +63,7 @@ h1 {
     display:flex;
     justify-content:space-between;
     align-items:center;
+    font-size:16px;
   }
 
 .header-nav__title {
@@ -96,7 +97,7 @@ h1 {
   column-gap:20px;
   align-items: center;
   font-weight: 500;
-  font-size:16px;
+  
 }
 
 .side-menu__slider-item--screen--desktop,
@@ -193,6 +194,7 @@ background-image: url("./icons/checkstatus.png");
 width:40px;
 height:40px;
 }
+
 
 
 
