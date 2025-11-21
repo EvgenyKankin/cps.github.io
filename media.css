@@ -1,14 +1,18 @@
 @media (min-width: 320px) and (max-width: 767px) {
   
-.header-menu {
+.header-nav {
   background-color: white;
+  width:100%;
+  height:80px;
 }
-  
-.header-menu__item--screen--768 {
+
+
+
+.header-nav__item--screen--768 {
   display:none;
 }
 
-.header-menu__nav--screen--1120 {
+.header-nav__menu--screen--1120 {
   display:none;
 }
 
@@ -17,19 +21,20 @@
   position: relative;  
   overflow: auto;
   white-space: nowrap;
-  padding-left:30px;
+  padding-left:1.5em;
+  
 }
 
-.side-menu__item--screen--desktop {
+.side-menu__slider-item--screen--desktop {
   display:none;
 }
 
-.side-menu__slider button:nth-child(2) {
+.side-menu__slider a:hover {
   border:2px solid #B8FFEC;
   border-radius:5px;
   }
 
-.side-menu__slider button:nth-child(2)::after {
+.side-menu__slider a:nth-child(2)::after {
   content:"";
   position: absolute; 
   top: 0;
@@ -40,38 +45,43 @@
   pointer-events: none;
 }
 
-.about__text--screen--320 {
-  display:flex;
-  }
-
-.about__text--screen--768 {
-  display:none;
-  }
-
-.about__text--screen--1120 {
-  display:none;
-  }
-
 .main-container {
   flex-direction: column;
 }
 
-.pic {
+.pic-container__img {
     width:320px;
     height:176px;
 }
 
+.main-container__about {
+    height:170px;
+    overflow:hidden;
+    width: 100%;
+}
+.main-container__text {
+  height:110px;
+  overflow: hidden;
+  width:85%;
+  margin-left:1.5em;;
+  padding-left:0;
 }
 
+.main-container__read-more {
+  padding-top:10px;
+  margin-left:1.2em;
+}
+}
 
 @media (min-width: 768px) and (max-width: 1119px) {
   
 
-.header-menu {
+.header-nav {
   background-color: white;
+  height:80px;
 }
 
-.header-menu__nav--screen--1120 {
+.header-nav__menu--screen--1120 {
   display:none;
 }
 
@@ -80,20 +90,20 @@
   position: relative;  
   overflow: auto;
   white-space: nowrap;
-  padding-left:30px;
+  padding-left:1.5em;
   }
 
-.side-menu__item--screen--desktop {
+.side-menu__slider-item--screen--desktop {
   display:none;
 }
 
-.side-menu__slider button:nth-child(2) {
+.side-menu__slider a:hover {
   border:2px solid #B8FFEC;
   border-radius:5px;
 }
 
 
-.side-menu__slider button:nth-child(2)::after {
+.side-menu__slider a:nth-child(2)::after {
   content:"";
   position: absolute; 
   top: 0;
@@ -103,36 +113,48 @@
   background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
   pointer-events:none;
 }
-.about__text--screen--320 {
-  display:flex;
-}
 
-.about__text--screen--768 {
-  display:flex;
-}
 
-.about__text--screen--1120 {
-  display:none;
-}
-
-.pic {
+.pic-container__img {
     width:360px;
     height:208px;
-}
+    border-radius:10px;
 }
 
+.main-container__about {
+  overflow:hidden;
+  width: 50%;
+}
+
+.pic-container {
+  width:50%;
+}
+
+.main-container__text {
+  height:160px;
+  overflow: hidden;
+  width:80%;
+  margin-left:1.5em;
+  padding-left:0;
+}
+
+.main-container__read-more {
+  padding-top:10px;
+  margin-left:1.2em;
+}
+}
 
 @media (min-width: 1120px) {
-  .header-menu {
+  .header-nav {
     display:none;
   }
 
-  .header-menu__nav--screen--1120 {
+  .header-nav__menu--screen--1120 {
     display:flex;
     justify-content:space-between;
   }
 
-  .section__title--pocket {
+  .section__title--desktop-display--none {
     display:none;
   }
 
@@ -140,28 +162,35 @@
   display:flex;
   flex-wrap:wrap;
   white-space: nowrap;
-  padding-left:30px;
+  padding-left:1.5em;
   }
 
-  .side-menu__item--screen--desktop {
+  .side-menu__slider-item--screen--desktop:hover,
+  .side-menu__slider-item--screen--pocket:hover {
   border:2px solid #B8FFEC;
   border-radius:5px;
   }
 
-.about__text--screen--320 {
-  display:flex;
-  }
-
-.about__text--screen--768 {
-  display:none;
-  }
-
-.about__text--screen--1120 {
-  display:flex;
-  }
-
-.pic {
+.pic-container__img {
     width:531.35px;
     height:307px;
+    border-radius:10px;
+}
+
+.main-container__read-more {
+  padding-top:10px;
+  margin-left:1.2em;
+}
+
+.main-container__text {
+  width:90%;
+  margin-left:1.7em;
+  padding-left:0;
+}
+
+.side-menu__slider-item--screen--desktop,
+.side-menu__slider-item--screen--pocket {
+  padding:10px 20px;
+  font-size:16px;
 }
 }
