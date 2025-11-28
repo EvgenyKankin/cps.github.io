@@ -8,13 +8,15 @@
 
 
 
-.header-nav__item--screen--768 {
+
+.header-nav__item--call,
+.header-nav__item--chat,
+.header-nav__item--profile,
+.header-nav__item--divider-left {
   display:none;
 }
 
-.header-nav__menu--screen--1120 {
-  display:none;
-}
+
 
 .side-menu__slider {
   display:flex;
@@ -25,9 +27,7 @@
   
 }
 
-.side-menu__slider-item--screen--desktop {
-  display:none;
-}
+
 
 .side-menu__slider a:hover {
   border:2px solid #B8FFEC;
@@ -54,12 +54,12 @@
     height:176px;
 }
 
-.main-container__about {
+.about {
     height:170px;
     overflow:hidden;
     width: 100%;
 }
-.main-container__text {
+.about__text {
   height:110px;
   overflow: hidden;
   width:85%;
@@ -67,9 +67,13 @@
   padding-left:0;
 }
 
-.main-container__read-more {
+.about__read-more {
   padding-top:10px;
   margin-left:1.2em;
+}
+
+.desktop-nav__button {
+  display:none;
 }
 }
 
@@ -81,9 +85,7 @@
   height:80px;
 }
 
-.header-nav__menu--screen--1120 {
-  display:none;
-}
+
 
 .side-menu__slider {
   display:flex;
@@ -93,9 +95,7 @@
   padding-left:1.5em;
   }
 
-.side-menu__slider-item--screen--desktop {
-  display:none;
-}
+
 
 .side-menu__slider a:hover {
   border:2px solid #B8FFEC;
@@ -121,7 +121,7 @@
     border-radius:10px;
 }
 
-.main-container__about {
+.about {
   overflow:hidden;
   width: 50%;
 }
@@ -130,7 +130,7 @@
   width:50%;
 }
 
-.main-container__text {
+.about__text {
   height:160px;
   overflow: hidden;
   width:80%;
@@ -138,9 +138,13 @@
   padding-left:0;
 }
 
-.main-container__read-more {
+.about__read-more {
   padding-top:10px;
   margin-left:1.2em;
+}
+
+.desktop-nav__button {
+  display:none;
 }
 }
 
@@ -149,14 +153,12 @@
     display:none;
   }
 
-  .header-nav__menu--screen--1120 {
+  .desktop-nav {
     display:flex;
     justify-content:space-between;
   }
 
-  .section__title--desktop-display--none {
-    display:none;
-  }
+
 
   .side-menu__slider {
   display:flex;
@@ -165,8 +167,7 @@
   padding-left:1.5em;
   }
 
-  .side-menu__slider-item--screen--desktop:hover,
-  .side-menu__slider-item--screen--pocket:hover {
+  .side-menu__item:hover {
   border:2px solid #B8FFEC;
   border-radius:5px;
   }
@@ -177,19 +178,18 @@
     border-radius:10px;
 }
 
-.main-container__read-more {
+.about__read-more {
   padding-top:10px;
   margin-left:1.2em;
 }
 
-.main-container__text {
+.about__text {
   width:90%;
   margin-left:1.7em;
   padding-left:0;
 }
 
-.side-menu__slider-item--screen--desktop,
-.side-menu__slider-item--screen--pocket {
+.side-menu__item {
   padding:10px 20px;
   font-size:16px;
 }
